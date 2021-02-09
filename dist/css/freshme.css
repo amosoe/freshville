@@ -1,0 +1,77 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar-brand {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-brand img {
+  width: 16rem;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  text-transform: capitalize;
+  font-family: Lato!important;
+  font-weight: 400;
+  font-size: 1.2rem;
+  letter-spacing: .1rem;
+}
+
+
+.navbar-nav li {
+  padding-right: .2rem; 
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  padding-top: .5rem;
+}
+
+.slider-body-wrapper {
+	padding: 0;
+	margin: 0;
+}
+
+.base-messages {
+	margin-top: 8%;
+	border: .2rem solid green;
+	width: 100%;
+}
+
+.short-text {
+	margin: auto;
+	text-align: center;
+	color: rgba(255,255,255,0.7);
+	text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

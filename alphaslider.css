@@ -1,0 +1,182 @@
+
+
+
+/* :: 1.0 Reboot CSS */
+* {
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body, html {
+	width: 100%;
+	height: 100%;
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	font-family: "Lato", sans-serif !important;
+	font-size: 1rem;
+	font-weight: normal;
+	background: #333;
+	color: #fff;
+	overflow-x: hidden;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+
+.slider {
+	position: relative;
+	overflow: hidden;
+	height: 100vh;
+	width: 100vw;
+}
+
+.slide {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 0.4s ease-in-out;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+}
+
+.slide.current {
+	opacity: 1;
+}
+
+.slide .content {
+	position: absolute;
+	opacity: 0;
+	/*bottom: 50%;*/
+	left: 50%;
+	width: 80%;
+	background-color: rgba(255, 255, 255, 0.8);
+	color: #333;
+	padding: 35px;
+}
+
+.slide .content h1 {
+	margin-bottom: 10px; 
+}
+
+.slide.current .content {
+	opacity: 1;
+	transform: translateX(-50%);
+	transition: all 0.7s ease-in-out 0.2s;
+}
+
+.buttons button#next {
+	position: absolute;
+	top: 50%;
+	right: 15px;
+}
+
+.buttons button#prev {
+	position: absolute;
+	top: 50%;
+	left: 15px;
+}
+
+.buttons button {
+	border: 2px solid white;
+	background-color: transparent;
+	color: white;
+	cursor: pointer;
+	outline: none;
+	padding: 13px 15px;
+	border-radius: 50%;
+}
+
+.buttons button:hover {
+	background-color: #fff;
+	color: #333;
+}
+
+
+/*
+
+@media (max-width: 500px) {
+	.slide .content {
+		bottom: -300px;
+		left: 0;
+		width: 100%;
+	}
+
+	.slide.current .content {
+		transform: translateY(-300px);
+	}
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Background Images*/
+.slide:first-child {
+	background: url('./assets/alpha1.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(2) {
+	background: url('./assets/alpha2.jpg') no-repeat center top/cover;
+}
+
+.slide:nth-child(3) {
+	background: url('./assets/alpha3.jpg') no-repeat center top/cover;
+}
+.slide:nth-child(4) {
+	background: url('./assets/alpha4.jpg') no-repeat center top/cover;
+}
+.slide:nth-child(5) {
+	background: url('./assets/alpha5.jpg') no-repeat center top/cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
